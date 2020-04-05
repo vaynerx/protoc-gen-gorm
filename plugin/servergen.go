@@ -206,7 +206,7 @@ func (p *OrmPlugin) generateCreateServerMethod(service autogenService, method au
 		p.spanResultHandling(service)
 		p.P(`return out, nil`)
 		p.P(`}`)
-		p.generatePreserviceHook(service.ccName, method.baseType, createService)
+		p.generatePreserviceHook(service.ccName, method.baseType, method.ccName)
 		p.generatePostserviceHook(service.ccName, method.baseType, p.TypeName(method.outType), method.ccName)
 	} else {
 		p.generateEmptyBody(service, method.outType)
