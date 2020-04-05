@@ -3,16 +3,23 @@
 
 package example
 
-import proto "github.com/golang/protobuf/proto"
-import fmt "fmt"
-import math "math"
-import google_protobuf2 "github.com/golang/protobuf/ptypes/empty"
-import _ "github.com/infobloxopen/protoc-gen-gorm/options"
-import google_protobuf4 "google.golang.org/genproto/protobuf/field_mask"
-import infoblox_api "github.com/infobloxopen/atlas-app-toolkit/query"
-
 import (
+	fmt "fmt"
+
+	proto "github.com/golang/protobuf/proto"
+
+	math "math"
+
+	google_protobuf2 "github.com/golang/protobuf/ptypes/empty"
+
+	_ "github.com/vaynerx/protoc-gen-gorm/options"
+
+	google_protobuf4 "google.golang.org/genproto/protobuf/field_mask"
+
+	infoblox_api "github.com/infobloxopen/atlas-app-toolkit/query"
+
 	context "golang.org/x/net/context"
+
 	grpc "google.golang.org/grpc"
 )
 

@@ -3,15 +3,25 @@
 
 package example
 
-import proto "github.com/golang/protobuf/proto"
-import fmt "fmt"
-import math "math"
-import _ "github.com/infobloxopen/protoc-gen-gorm/options"
-import gorm_types "github.com/infobloxopen/protoc-gen-gorm/types"
-import google_protobuf1 "github.com/golang/protobuf/ptypes/wrappers"
-import google_protobuf2 "github.com/golang/protobuf/ptypes/empty"
-import google_protobuf3 "github.com/golang/protobuf/ptypes/timestamp"
-import user "github.com/infobloxopen/protoc-gen-gorm/example/user"
+import (
+	fmt "fmt"
+
+	proto "github.com/golang/protobuf/proto"
+
+	math "math"
+
+	_ "github.com/vaynerx/protoc-gen-gorm/options"
+
+	gorm_types "github.com/vaynerx/protoc-gen-gorm/types"
+
+	google_protobuf1 "github.com/golang/protobuf/ptypes/wrappers"
+
+	google_protobuf2 "github.com/golang/protobuf/ptypes/empty"
+
+	google_protobuf3 "github.com/golang/protobuf/ptypes/timestamp"
+
+	user "github.com/vaynerx/protoc-gen-gorm/example/user"
+)
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

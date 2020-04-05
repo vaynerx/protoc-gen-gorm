@@ -47,10 +47,15 @@ It has these top-level messages:
 */
 package example
 
-import proto "github.com/golang/protobuf/proto"
-import fmt "fmt"
-import math "math"
-import _ "github.com/infobloxopen/protoc-gen-gorm/options"
+import (
+	fmt "fmt"
+
+	proto "github.com/golang/protobuf/proto"
+
+	math "math"
+
+	_ "github.com/vaynerx/protoc-gen-gorm/options"
+)
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

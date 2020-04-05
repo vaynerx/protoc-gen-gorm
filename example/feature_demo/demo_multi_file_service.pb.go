@@ -3,14 +3,19 @@
 
 package example
 
-import proto "github.com/golang/protobuf/proto"
-import fmt "fmt"
-import math "math"
-import _ "github.com/infobloxopen/protoc-gen-gorm/options"
-import infoblox_api "github.com/infobloxopen/atlas-app-toolkit/query"
-
 import (
+	fmt "fmt"
+
+	proto "github.com/golang/protobuf/proto"
+
+	math "math"
+
+	_ "github.com/vaynerx/protoc-gen-gorm/options"
+
+	infoblox_api "github.com/infobloxopen/atlas-app-toolkit/query"
+
 	context "golang.org/x/net/context"
+
 	grpc "google.golang.org/grpc"
 )
 
@@ -137,7 +142,9 @@ var _BlogPostService_serviceDesc = grpc.ServiceDesc{
 	Metadata: "example/feature_demo/demo_multi_file_service.proto",
 }
 
-func init() { proto.RegisterFile("example/feature_demo/demo_multi_file_service.proto", fileDescriptor3) }
+func init() {
+	proto.RegisterFile("example/feature_demo/demo_multi_file_service.proto", fileDescriptor3)
+}
 
 var fileDescriptor3 = []byte{
 	// 332 bytes of a gzipped FileDescriptorProto

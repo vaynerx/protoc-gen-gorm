@@ -17,12 +17,19 @@ It has these top-level messages:
 */
 package user
 
-import proto "github.com/golang/protobuf/proto"
-import fmt "fmt"
-import math "math"
-import _ "github.com/infobloxopen/protoc-gen-gorm/options"
-import google_protobuf1 "github.com/golang/protobuf/ptypes/timestamp"
-import atlas_rpc "github.com/infobloxopen/atlas-app-toolkit/rpc/resource"
+import (
+	fmt "fmt"
+
+	proto "github.com/golang/protobuf/proto"
+
+	math "math"
+
+	_ "github.com/vaynerx/protoc-gen-gorm/options"
+
+	google_protobuf1 "github.com/golang/protobuf/ptypes/timestamp"
+
+	atlas_rpc "github.com/infobloxopen/atlas-app-toolkit/rpc/resource"
+)
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
